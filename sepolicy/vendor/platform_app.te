@@ -1,0 +1,5 @@
+# The platform-signed MiuiCamera targets SDK 33 and uses platform_app_36 on Android 17.
+allow platform_app_36 app_data_file:file execute;
+allow platform_app_36 vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+
+binder_call(platform_app_36, hal_camera_default)
